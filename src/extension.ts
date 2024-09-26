@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import { showForm } from './form';
 import { showDataTree } from './dataView';
 import { fetchDataFromUrl } from './service';
 

@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 export function showDataTree(data: any, url: string) {
     const panel = vscode.window.createWebviewPanel(
         'dataTree',
-        'Data Structure',
+        'DataLens',
         vscode.ViewColumn.Two,
         {
             enableScripts: true
