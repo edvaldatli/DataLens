@@ -1,0 +1,65 @@
+{
+  "name": "datalens",
+  "displayName": "DataLens",
+  "description": "A Visual Studio Code extension for visualizing and exploring complex API data structures in a clean, organized format.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "datalens",
+          "title": "DataLens",
+          "icon": "images/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "datalens": [
+        {
+          "id": "datalens",
+          "name": "DataLens",
+          "when": "datalens",
+          "icon": "images/icon.png"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "datalens.open",
+        "title": "Open DataLens"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.93.0",
+    "@types/xml2js": "^0.4.14",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "xml2js": "^0.6.2"
+  }
+}
