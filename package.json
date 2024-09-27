@@ -2,6 +2,11 @@
   "name": "datalens",
   "displayName": "DataLens",
   "description": "A Visual Studio Code extension for visualizing and exploring complex API data structures in a clean, organized format.",
+  "publisher": "edvaldatlidev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edvaldatli/DataLens"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.93.0"
@@ -9,7 +14,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
@@ -35,8 +39,21 @@
       {
         "command": "datalens.open",
         "title": "Open DataLens"
+      },
+      {
+        "command": "datalens.seeInDataLens",
+        "title": "See in DataLens"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "datalens.seeInDataLens",
+          "when": "editorHasSelection",
+          "group": "navigation@1000"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
