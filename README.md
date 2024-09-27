@@ -15,10 +15,6 @@ DataLens is a Visual Studio Code extension that allows you to fetch and visualiz
 ![image](https://github.com/user-attachments/assets/7e6c7a51-c852-4120-adad-a2481727ca0d)
 ![image](https://github.com/user-attachments/assets/db2a73c0-1c12-4b6c-82aa-18dea070132a)
 
-
-
-
-
 ## License
 
 This project is licensed under the MIT License.

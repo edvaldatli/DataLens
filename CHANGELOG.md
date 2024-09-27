@@ -2,8 +2,8 @@
 
 All notable changes to the "datalens" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
 
-- Initial release
+### Added
+
+- v0.0.3 - Updated README to be more informative about the extension.
